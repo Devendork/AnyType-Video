@@ -2,35 +2,58 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="horizontal" android:layout_gravity="center">
+    android:orientation="horizontal" android:layout_gravity="center" android:background="#ffffff">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="fill_parent"
         android:layout_gravity="center_vertical|center_horizontal"
         android:orientation="horizontal" >
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical" android:paddingLeft="20dp" android:paddingTop="135dp">
+
+           <ImageView
+               android:id="@+id/imageView2"
+               android:layout_width="match_parent"
+               android:layout_height="190dp"
+               android:src="@drawable/anytype_contact" />
+
+           <LinearLayout
+               android:layout_width="678dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.04" >
+
+		    <Button
+		        android:id="@+id/button_new_video"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Create New Font with Video"/>
+
+
+               <Button
+                   android:id="@+id/button_load"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Load Existing Font" />
+
+               <Button
+                   android:id="@+id/button_edit"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Edit Font" android:visibility="invisible"/>
+           </LinearLayout>
+
+       </LinearLayout>
     
-    <Button
-        android:id="@+id/button_new"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create New Font"
-        android:layout_gravity="center_vertical|center_horizontal" />
-
-    <Button
-        android:id="@+id/button_new_video"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create New Font with Video"
-        android:layout_gravity="center_vertical|center_horizontal" />
-
-
-
-    <Button
-        android:id="@+id/button_load"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:text="Load Existing Font" />
 </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="398dp"
+        android:layout_height="457dp"
+        android:src="@drawable/anytype_home" android:layout_gravity="center_vertical" android:layout_marginLeft="40dp"/>
+
 </FrameLayout>
